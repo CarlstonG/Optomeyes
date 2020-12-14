@@ -12,7 +12,7 @@ export default function SubHero() {
                     <button type="button" class="btn btn-primary btn-lg">Learn More</button>
                 </div>
                 <div className="col col-md-6 nopadding">
-                <img src={Img4} className="img-fluid" alt="Responsive image"/>
+                <img src={Img4} className="img-fluid" alt="Responsive"/>
                 </div>
             </div>
         </div>
