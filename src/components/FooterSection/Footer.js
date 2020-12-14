@@ -14,9 +14,9 @@ export default function Footer() {
                 <h2>Optomeyes Eyewear</h2>
                 <div className="content">
                     <div className="social mt-3 mb-1">
-                        <a href="#" className="fab fa-facebook-f mr-5"></a>
-                        <a href="#" className="fab fa-instagram mr-5"></a>
-                        <a href="#" className="fab fa-twitter mr-5"></a>
+                        <a href="https://facebook.com/" className="fab fa-facebook-f mr-5">FB</a>
+                        <a href="instagram.com" className="fab fa-instagram mr-5">IG</a>
+                        <a href="www.twitter.com" className="fab fa-twitter mr-5">Twitter</a>
                     </div>
                 </div>
 
