@@ -1,5 +1,7 @@
 import React from 'react'
 import Map from '../images/Mask Group 3.png'
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact'
+
 export default function Footer() {
     return (
 
@@ -48,10 +50,31 @@ export default function Footer() {
             </div>
             </div>
             <div className="row">
-            <div className="col col-md-8">
-                <h2>Map</h2>
-                <div className="img mb-5">
-                    <img src={Map}/>
+            <div className="col col-md-8 mt-1">
+                <h2>Get InTouch</h2>
+                <div>
+                <MDBContainer>
+  <MDBRow>
+    <MDBCol md="8">
+      <form>
+        <div className="grey-text">
+          <MDBInput label="Your Name"  placeholder="First name" className="text-dark" icon="user" group type="text" validate error="wrong"
+            success="right" />
+          <MDBInput label="Your Email" icon="envelope" group type="email" validate error="wrong"
+            success="right" />
+          <MDBInput label="Subject" icon="tag" group type="text" validate error="wrong" success="right" />
+          <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
+        </div>
+        <div className="text-center">
+          <MDBBtn outline color="primary text-light">
+            Send
+            <MDBIcon far icon="paper-plane" className="ml-1" />
+          </MDBBtn>
+        </div>
+      </form>
+    </MDBCol>
+  </MDBRow>
+</MDBContainer>
                 </div>
             </div>
            <div className="col mt-4 col-md-4">
