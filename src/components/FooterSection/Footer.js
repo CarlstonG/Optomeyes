@@ -45,7 +45,7 @@ export default function Footer() {
             <div className="col col-md-4">
                 <h2>Map</h2>
                 <div className="img mb-5">
-                    <img src={Map}/>
+                    <img src={Map} alt="Map"/>
                 </div>
             </div>
             </div>
