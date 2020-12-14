@@ -9,18 +9,21 @@ import
     NavItem, 
     NavLinks} from './NavbarElements'
 import Button from 'react-bootstrap/Button'
-
+import { Link }   from 'react-router-dom'
 import logo from '../images/logo.png'
 
-const Navbar = () => {
+
+const Navbar = ({ toggle }) => {
     return (
        <>
         <Nav>
              <NavbarContainer>
+                 <Link to="/">
                  <NavLogo>
                      <img src={logo} alt="Logo" width="100" height="100"/>
                  </NavLogo>
-                 <MobileIcon>
+                 </Link>
+                 <MobileIcon onClick={toggle}>
                      <FaBars/>
                  </MobileIcon>
                  <NavMenu>
@@ -28,7 +31,7 @@ const Navbar = () => {
                         <NavLinks to="home">Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                        <NavLinks to="about">About Us</NavLinks>
+                        <NavLinks to="/page1">About Us</NavLinks>
                         </NavItem>
                         <NavItem>
                         <NavLinks to="technology">Our Technology</NavLinks>

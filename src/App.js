@@ -1,6 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
-import Home from './pages/index';
+import Menu from './pages/Menu';
+
 
 
 
@@ -9,7 +10,7 @@ import Home from './pages/index';
 function App() {
   return (
    <Router>
-     <Home/>
+     <Menu/>     
    </Router>
   );
 }

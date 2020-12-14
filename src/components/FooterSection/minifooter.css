@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: #3E4450;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+  a{
+      text-decoration: none!important;
+      color: white;
+      text-transform: none;
+  }
+  .hidden {
+    display: none;
+  }
+  
