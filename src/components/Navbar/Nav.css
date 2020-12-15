@@ -1,6 +1,6 @@
-a.selected {
+.selected {
     text-decoration: underline;
-    color: rgb(8, 113, 250);
+    color: rgb(3, 3, 3);
 }
 
 a {
