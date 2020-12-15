@@ -18,7 +18,7 @@ body {
   }
   a{
       text-decoration: none!important;
-      color: white;
+      color: rgb(7, 156, 243);
       text-transform: none;
   }
   .hidden {

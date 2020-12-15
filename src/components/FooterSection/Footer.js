@@ -50,8 +50,8 @@ export default function Footer() {
             </div>
             </div>
             <div className="row">
-            <div className="col col-md-8 mt-1">
-                <h2>Get InTouch</h2>
+            <div className="col col-md-8 mt-1 text-left">
+                <h2 class="text-left">Get InTouch</h2>
                 <div>
                 <MDBContainer>
   <MDBRow>

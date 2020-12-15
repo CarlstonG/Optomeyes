@@ -12,15 +12,19 @@ import Button from 'react-bootstrap/Button'
 import { Link }   from 'react-router-dom'
 import logo from '../images/logo.png'
 
+import {NavLink} from 'react-router-dom'
+import './Nav.css'
 
 const Navbar = ({ toggle }) => {
     return (
        <>
         <Nav>
              <NavbarContainer>
-                 <Link to="/">
+                 <Link >
                  <NavLogo>
-                     <img src={logo} alt="Logo" width="100" height="100"/>
+                     <NavLink exact to="/">
+                     <img src={logo} alt="Logo" width="80" height="80"/>
+                     </NavLink>
                  </NavLogo>
                  </Link>
                  <MobileIcon onClick={toggle}>
@@ -28,24 +32,42 @@ const Navbar = ({ toggle }) => {
                  </MobileIcon>
                  <NavMenu>
                         <NavItem>
-                        <NavLinks to="home">Home</NavLinks>
+                        <NavLinks>
+                            <NavLink activeClassName="selected" exact to="/">Home</NavLink>
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                        <NavLinks to="/page1">About Us</NavLinks>
+                        <NavLinks>
+                            <NavLink activeClassName="selected" exact to="/about"> About Us</NavLink>
+                           </NavLinks>
                         </NavItem>
                         <NavItem>
-                        <NavLinks to="technology">Our Technology</NavLinks>
+                        <NavLinks >
+                            <NavLink activeClassName="selected"  exact to="/technology">Our Technology</NavLink>
+                            </NavLinks>
                          </NavItem>
                          <NavItem>
-                         <NavLinks to="orthokeratology">Orthokeratology</NavLinks>
+                         <NavLinks>
+                             <NavLink activeClassName="selected"  exact to="/orthokeratology">
+                             Orthokeratology
+                             </NavLink>
+                             </NavLinks>
                          </NavItem>
                          <NavItem>
-                         <NavLinks to="contact">Contact Us</NavLinks>
+                         <NavLinks activeClassName="selected" to="/contact">
+                             <NavLink to="/contact">
+                             Contact Us
+                             </NavLink>
+                            </NavLinks>
                          </NavItem>
                      
                          <NavItem>
-                         <NavLinks to="book">
-                         <Button class="btn primary">Book an Appointment</Button>
+                         <NavLinks to="/booking">
+                         <Button class="btn primary">
+                             <NavLink to="/booking">
+                             Book an Appointment
+                             </NavLink>
+                             </Button>
                          </NavLinks>
                          </NavItem>
                     
