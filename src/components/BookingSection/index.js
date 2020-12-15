@@ -1,35 +1,33 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { StyledFormWrapper, StyledInput, StyledForm, StyledFieldset, StyledTextArea, StyledError, StyledButton } from './BookingSecion'
 
 
-const initialState = {
-    name: '',
-    email: '',
-    day: '',
-    message: '',
-}
+
 
 export default function BookingSecion() {
-    const [state, setState] = useState(initialState);
-    const [error, setError] = useState('');
-
-    const handleSubmit = e => {
-
-    }
-    const handleInput = e => {
-
-    }
 
 
     return (
         <>
+
+
+
+
+
+
+
+
+
+
+
+
             <StyledFormWrapper>
-                <StyledForm onSubmit={handleSubmit} action="contact" method="post">
+                <StyledForm  action="contact" method="post">
                     <h2>BOOK YOUR APPOINTMENT</h2>
                     <label htmlFor="name">Name</label>
-                    <StyledInput type="text" name="name" value={state.name} onChange={handleInput}/>
+                    <StyledInput type="text" name="name" />
                     <label htmlFor="email">Email</label>
-                    <StyledInput type="text" name="email" value={state.email} onChange={handleInput}/>
+                    <StyledInput type="text" name="email"/>
                     <StyledFieldset>
                         <legend>Preferred Day of week:</legend>
                         <label><input type="radio" value="Monday" name="Monday"/>Monday</label>
@@ -45,6 +43,8 @@ export default function BookingSecion() {
                     <StyledButton type="submit">SUBMIT</StyledButton>
                 </StyledForm>
             </StyledFormWrapper>
+       
+       
         </>
     )
 }
