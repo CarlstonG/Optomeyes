@@ -12,8 +12,8 @@ export default function Footer() {
               <fr />
             <div className="row">
             <div class="col col-md-4">
-                <h2>Get In Touch With</h2>
-                <h2>Optomeyes Eyewear</h2>
+                <p className="text-info font-weight-bold">Get In Touch With</p>
+                <h1 className="font-weight-normal">Optomeyes Eyewear</h1>
                 <div className="content">
                     <div className="social mt-3 mb-1">
                         <a href="https://facebook.com/" className="fab fa-facebook-f mr-5">FB</a>
@@ -24,7 +24,7 @@ export default function Footer() {
 
             </div>
             <div class="col col-md-4">
-                <h1>Location</h1>
+                <h1 className="text-info">Location</h1>
                 
                 <div className="content">
                     <div className="email">
@@ -43,7 +43,7 @@ export default function Footer() {
                 
             </div>
             <div className="col col-md-4">
-                <h2>Map</h2>
+                <h1 className="text-info">Map</h1>
                 <div className="img mb-5">
                     <img src={Map} alt="Map"/>
                 </div>

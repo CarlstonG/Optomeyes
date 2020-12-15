@@ -1,9 +1,14 @@
 import React from 'react'
+import ContactUs from '../../../components/ContactUsSection/ContactUs'
 
 export default function Contact() {
     return (
-        <div>
-            <h1>This is contact section</h1>
+        <>
+           <div>
+            <ContactUs/>
         </div>
+        </>
+     
+    
     )
 }

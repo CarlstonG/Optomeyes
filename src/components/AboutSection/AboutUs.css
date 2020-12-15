@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.no-gutter{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+
+}
+
+.content-container {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 600px){ 
+    .content-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}
+
+.content-banner {
+    height: 100%;
+    width: 900px;
+
+}
+
+@media only screen and (max-width: 600px){ 
+    .content-banner {
+        height: 100%;
+        width: 500px;
+    }
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.content {
+    padding: 5px 50px;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px){ 
+    .content {
+        padding: 1px;
+    }
+}
+
+
+/* Avatar styling*/
+
+.info-banner {grid-area: box1;}
+.info-content {grid-area: box2;}
+
+.info-container {
+    display: grid;
+    grid-template-areas: 'box1 box2 box2' ;
+    padding: 20px 20px;
+
+}
+
+@media only screen and (max-width: 600px){ 
+    .info-container {
+        grid-template-areas: 'box1 '
+        'box2' ;
+        padding: 0;
+    }
+}
+
+.info-content {
+    padding: 25px 60px;
+    background-color: #3E4450;
+    color: white;
+    height: 350px;
+}
+
+@media only screen and (max-width: 600px){ 
+    .info-content {
+        height: 100%;
+        padding: 5px 5px;
+    }
+}
+
+
+
+.info-content h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-content h1 {
+    text-emphasis: italic;
+    font-style: italic;
+}
+
+.info-conten p {
+    padding-bottom: 2rem;
+}
+
+
+/* Avatar 2 */
+.info-banner-2 {grid-area: box1;}
+.info-content-2 {grid-area: box2;}
+
+
+.info-container-2 {
+    display: grid;
+    grid-template-areas: 'box2 box2 box1' ;
+    padding: 20px 20px;
+
+}
+
+@media only screen and (max-width: 600px){ 
+    .info-container-2 {
+        grid-template-areas: 'box1 '
+        'box2' ;
+        padding: 0;
+    }
+}
+
+.info-content-2 {
+    padding: 25px 60px;
+    background-color: #3E4450;
+    color: white;
+    height: 350px;
+}
+
+@media only screen and (max-width: 600px){ 
+    .info-content-2 {
+        height: 100%;
+        padding: 5px 5px;
+    }
+}
+
+
+.info-content-2 h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-content-2 h1 {
+    text-emphasis: italic;
+    font-style: italic;
+}
