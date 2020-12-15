@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
                          <NavItem>
                          <NavLinks to="/booking">
                          <Button class="btn primary">
-                             <NavLink to="/booking">
+                             <NavLink to="/booking" className="text-black">
                              Book an Appointment
                              </NavLink>
                              </Button>

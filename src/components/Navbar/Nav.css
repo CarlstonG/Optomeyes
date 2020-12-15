@@ -1,9 +1,13 @@
 a.selected {
     text-decoration: underline;
-    color: rgb(15, 15, 15);
+    color: rgb(8, 113, 250);
 }
 
 a {
     text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.text-black {
     color: black;
 }
